@@ -6,6 +6,9 @@ from flask import jsonify
 from api.v1.views import app_views
 from datetime import datetime
 from os import getenv
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
 @app_views.route("/information", methods=["GET"], strict_slashes=False)
@@ -21,7 +24,7 @@ def information() -> str:
         - Status Code: 200
     """
     information = {
-        "email": "favouridowu02@gmail.com",
+        "email": getenv("EMAIL"),
         "current_datetime": datetime.now().isoformat(),
         "github-url": getenv("GITHUB_URL"),
     }
