@@ -11,6 +11,7 @@ This is a simple public API built using **Flask** to fulfill the **HNG12 Stage 0
 - **Flask** framework for building the API.  
 - **Flask-CORS** for Cross-Origin Resource Sharing.  
 - **dotenv** for environment variable management.  
+
 - Fast response time (< 500ms).  
 
 ---
@@ -19,7 +20,7 @@ This is a simple public API built using **Flask** to fulfill the **HNG12 Stage 0
 
 ### **Endpoint**  
 ```http
-GET <your-public-api-url>
+GET ```https://hng12-stage0-backend-77lu.onrender.com/api/v1/information/```
 ```
 
 ### **Response Format (200 OK)**  
@@ -53,7 +54,7 @@ Ensure you have the following installed on your system:
 #### **1. Clone the Repository**  
 ```bash
 git clone https://www.github.com/Favouridowu02/hng12_stage0_backend
-cd your-repo
+cd hng12_stage0_backend
 ```
 
 #### **2. Create a Virtual Environment**  
@@ -87,7 +88,7 @@ python3 -m api.v1.app
 #### **2. Test the API**  
 Open your browser or use Postman to send a **GET request** to:  
 ```http
-http://127.0.0.1:5000/
+http://127.0.0.1:5000/api/v1/information
 ```
 
 ### **Example Response**  
