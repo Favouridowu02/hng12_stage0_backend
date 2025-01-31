@@ -22,7 +22,7 @@ This is a simple public API built using **Flask** to fulfill the **HNG12 Stage 0
 
 ### **Endpoint**  
 ```http
-GET ```https://hng12-stage0-backend-77lu.onrender.com/api/v1/information/```
+GET https://hng12-stage0-backend-77lu.onrender.com/api/v1/information
 ```
 
 ### **Response Format (200 OK)**  
