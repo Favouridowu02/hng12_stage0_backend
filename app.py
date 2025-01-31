@@ -1,4 +1,4 @@
-# filepath: /home/favour/hng12_stage0_backend/app.py
+#!/usr/bin/env python3
 import os
 from flask import Flask, jsonify
 from flask_cors import CORS

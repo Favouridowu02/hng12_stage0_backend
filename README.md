@@ -5,7 +5,7 @@ https://hng.tech/hire/python-developers
 ## Introduction  
 This is a simple public API built using **Flask** to fulfill the **HNG12 Stage 0 Backend Task**. The API provides the following JSON response:  
 
-- Your **registered email address** (used for HNG12 Slack registration).  
+- Your **registered email address**
 - The **current datetime** in **ISO 8601** format (UTC).  
 - The **GitHub repository URL** of the project.  
 
@@ -22,7 +22,7 @@ This is a simple public API built using **Flask** to fulfill the **HNG12 Stage 0
 
 ### **Endpoint**  
 ```http
-GET https://hng12-stage0-backend-77lu.onrender.com/api/v1/information
+GET https://hng12-stage0-backend-77lu.onrender.com
 ```
 
 ### **Response Format (200 OK)**  
@@ -90,7 +90,7 @@ python3 -m api.v1.app
 #### **2. Test the API**  
 Open your browser or use Postman to send a **GET request** to:  
 ```http
-http://127.0.0.1:5000/api/v1/information
+http://127.0.0.1:5000/
 ```
 
 ### **Example Response**  
