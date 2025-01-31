@@ -1,7 +1,5 @@
 # Public API for HNG12 Stage 0 – Backend Task  
 
-```https://hng.tech/hire/python-developers```
-
 ## Introduction  
 This is a simple public API built using **Flask** to fulfill the **HNG12 Stage 0 Backend Task**. The API provides the following JSON response:  
 
