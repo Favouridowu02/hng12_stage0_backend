@@ -25,7 +25,7 @@ def information() -> str:
     """
     information = {
         "email": getenv("EMAIL"),
-        "current_datetime": datetime.now(timezone.utc).isoformat(),
+        "current_datetime": datetime.now(timezone.utc).isoformat(timespec='seconds').replace("+00:00", "Z"),
         "github-url": getenv("GITHUB_URL"),
     }
     return jsonify(information), 200
