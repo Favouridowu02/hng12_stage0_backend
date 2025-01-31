@@ -4,7 +4,7 @@
 """
 from flask import jsonify
 from api.v1.views import app_views
-from datetime import datetime
+from datetime import datetime, timezone
 from os import getenv
 from dotenv import load_dotenv
 
@@ -25,7 +25,7 @@ def information() -> str:
     """
     information = {
         "email": getenv("EMAIL"),
-        "current_datetime": datetime.now().isoformat(),
+        "current_datetime": datetime.now(timezone.utc).isoformat(),
         "github-url": getenv("GITHUB_URL"),
     }
     return jsonify(information), 200
